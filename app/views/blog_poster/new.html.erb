@@ -1,1 +1,7 @@
-I AM NEW
+<h1>Create a New Posting</h1>
+  <%= simple_form_for @user do |f| %>
+    <%= f.input :title %>
+    <%= f.input :link %>
+    <%= f.input :photo %>
+    <%= f.button :submit %>
+<% end %>

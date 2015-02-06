@@ -1,2 +1,9 @@
-<h1>BlogPoster#show</h1>
-<p>Find me in app/views/blog_poster/show.html.erb</p>
+
+<h1><%= @post.title %></h1>
+
+<%=image_tag @post.photo %>
+
+
+<h2><%= @post.body %></h2>
+
+<h4>Posted <%= distance_of_time_in_words(Time.now, @post.created_at) %> ago</h4>

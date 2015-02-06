@@ -5,8 +5,9 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'blog_poster#index'
-    get "posts/new" => "blog_poster#new", as: :new_post
-    get "posts/:id" => "blog_poster#show", as: :post
+    resources :blog_poster
+    # get "posts/new" => "blog_poster#new", as: :new_post
+    # get "posts/:id" => "blog_poster#show", as: :post
 
 
   # Example of regular route:

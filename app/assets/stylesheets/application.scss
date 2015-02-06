@@ -1,1 +1,19 @@
 @import "bootstrap";
+
+html body {
+    font-family: 'Oswald', sans-serif;
+    background: #EEEEEE;
+}
+html body a {
+   font-size: 30px;
+   text-decoration: none !important;
+}
+
+html body h1 {
+   font-size: 30px;
+}
+
+ .row.no-gutter {
+    margin-left: 0;
+    margin-right: 0;
+ }

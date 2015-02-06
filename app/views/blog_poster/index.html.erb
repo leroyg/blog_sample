@@ -1,0 +1,13 @@
+
+<%= link_to "New Post", new_post_path, :class => "btn btn-primary btn-md"%>
+<% @posts.each do |post|%>
+   <div class="blog-post">
+      <h1><%= link_to post.title, "#" %></h1>
+
+      <div class="panel panel-default">
+        <div class="panel-body">
+   </div>
+   <p class="pull-right time-padding">Posted <%= distance_of_time_in_words(Time.now, post.created_at) %> ago</p>
+</div>
+   </div>
+<%end%>
